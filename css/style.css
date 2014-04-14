@@ -1,6 +1,7 @@
 body{
     margin:0px;
     padding:0px;
+    font-family: 'Arial';
 }
 
 input{
@@ -12,10 +13,12 @@ button{
 }
 
 h1{
+    font-size: 30px;
 
 }
 
 h2{
+    margin: 0;
     
 }
 
@@ -32,35 +35,105 @@ h4{
     margin: 0 auto;
 }
 
+.header{
+    position: fixed;
+
+    top: 0px;
+    height: 120px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.body{
+    padding-top: 120px;
+
+}
+
 ul.menu{
     list-style-type:none;
+    position: absolute;
+    left: 323px;
+    top: 38px;
+    font-size: 14px;
+    vertical-align: middle;
 }
 
 ul.menu li{
-    display: inline;
+    display: inline-block;
+    color: #276a3d;
+    width: 94px;
+    float: left;
+    vertical-align: middle;
+    height: 40px;
+}
+
+ul.menu li a{
+    color: #276a3d;
+}
+
+.img__meta{
+    color: #666666;
+    font-size: 12px;
+    position: absolute;
+    left: 174px;
+    top: 38px;
+    width: 167px;
 }
 
 .index__contacts{
+    /* position: relative; */
 
+    /* left: 100%; */
+    /* margin-left: -272px; */
+    /* top: 14px; */
+    float: right;
 }
 
 .index__phone{
+    font-size: 28px;
 
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+.header__logo{
+    margin-top: 6px;    
+    margin-left: 1px;
 }
 
 .index__adress{
+    color: #FFFFFF;
 
+    font-size: 17px;
 }
 
 .action{
+    background: #FFFFFF;
 
+    border-radius: 5px;
+    width: 273px;
+    /* position: relative; */
+    /* left: 100%; */
+    /* margin-left: -379px; */
+    top: 27px;
+    padding: 9px 18px;
+    height: 320px;
+    float: right;
 }
 
 .action__solution{
+    margin-top: 8px;
 
+    width: 250px;
+    font-size: 16px;
+    margin-bottom: 19px;
 }
 
 .index__prefooter{
+
+}
+
+.index__prefooter h1{
+    color: #FFFFFF;
 
 }
 
@@ -110,4 +183,46 @@ ul.menu li{
 
 .action_footer{
     
+}
+
+#index{
+    
+}
+
+.index_bg{
+    background: url(../img/bg_sibforest.jpg);
+    
+    width: 1263px;
+    height: 625px;
+    background-size: cover;
+    position: absolute;
+    margin-left: -120px;
+    z-index: -1;
+}
+
+.action input{
+    width: 229px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.button{
+    background: #9BC005;
+    padding: 17px 0px 11px 0px;
+    text-align: center;
+    width: 270px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 800;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 0px 0px #7B9903;
+    text-decoration: none;
+}
+.button:active{
+    background: #7B9903;
+    box-shadow: 0px 4px 0px 0px #9BC005;
 }
