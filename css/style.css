@@ -2,6 +2,7 @@ body{
     margin:0px;
     padding:0px;
     font-family: 'Arial';
+    overflow-x: hidden;
 }
 
 input{
@@ -20,14 +21,65 @@ h1{
 h2{
     margin: 0;
     
+    font-size: 22px;
 }
 
 h3{
+    font-size: 22px;
     
+    margin-bottom: 7px;
 }
 
 h4{
+    margin: 1px 0px 0px 0px;
     
+}
+
+#index{
+
+}
+#howwework:before, #technology:before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-left: -100%;
+    background: #f2f2f2;
+    margin-top: -20px;
+}
+#howwework, #technology{
+    background: #f2f2f2;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#howwework:after, #technology:after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    top: 0px;
+    z-index: -1;
+    left: 100%;
+}
+#projects{
+
+}
+#cost{
+
+}
+#howwework{
+
+}
+#forging{
+
+}
+#requestcall{
+    padding-top: 1px;
+
 }
 
 .container{
@@ -35,12 +87,32 @@ h4{
     margin: 0 auto;
 }
 
+.header:before{
+     content:''; 
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-left: -100%;
+    background: #FFFFFF;
+}
+
 .header{
     position: fixed;
-
     top: 0px;
     height: 120px;
     background: rgba(255, 255, 255, 1);
+    z-index: 9;
+}
+.header:after{
+     content:''; 
+     display: block; 
+     position: absolute; 
+     width: 100%; 
+     height: 100%; 
+     background: #FFFFFF; 
+     top: 0;  
+     left: 100%;
 }
 
 .body{
@@ -80,12 +152,8 @@ ul.menu li a{
 }
 
 .index__contacts{
-    /* position: relative; */
-
-    /* left: 100%; */
-    /* margin-left: -272px; */
-    /* top: 14px; */
-    float: right;
+    margin-left: 780px;
+    padding-top: 14px;
 }
 
 .index__phone{
@@ -93,11 +161,22 @@ ul.menu li a{
 
     color: #FFFFFF;
     font-weight: 800;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1);
 }
 
 .header__logo{
     margin-top: 6px;    
     margin-left: 1px;
+}
+
+.fir-tree{
+    background: url(../img/fir-tree.png);
+    width: 98px;
+    height: 57px;
+    position: absolute;
+    left: 50%;
+    margin-left: -49px;
+    margin-top: -71px;
 }
 
 .index__adress{
@@ -111,13 +190,11 @@ ul.menu li a{
 
     border-radius: 5px;
     width: 273px;
-    /* position: relative; */
-    /* left: 100%; */
-    /* margin-left: -379px; */
+    margin-left: 705px;
     top: 27px;
     padding: 9px 18px;
     height: 320px;
-    float: right;
+    margin-top: 12px;
 }
 
 .action__solution{
@@ -129,23 +206,43 @@ ul.menu li a{
 }
 
 .index__prefooter{
+    width: 1143px;
 
+    color: #FFFFFF;
+    background: url(../img/bg_cross.png);
+    position: absolute;
+    margin-left: -120px;
+    padding-left: 120px;
+    margin-top: 45px;
+    height: 162px;
 }
 
 .index__prefooter h1{
     color: #FFFFFF;
 
+    margin: 20px 0px 8px 0px;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1);
 }
 
 .index__footer{
+    margin-top: 207px;
+    
+    
 
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .index__footer-item{
+    display: inline-block;
 
+    text-align: center;
+    width: 176px;
+    margin: 0px 80px;
 }
 
 .index__footer-item img{
+    margin-bottom: 19px;
 
 }
 
@@ -161,12 +258,20 @@ ul.menu li a{
 
 }
 
-.content__img{
+.content_left .content__img{
+    float: left;
+    margin-right: 32px;
+}
 
+.content_right .content__img{
+    float: right;
+    margin-left: 50px;
 }
 
 .content__text{
+    font-size: 14px;
 
+    padding-right: 50px;
 }
 
 .content__avatar{
@@ -225,4 +330,36 @@ ul.menu li a{
 .button:active{
     background: #7B9903;
     box-shadow: 0px 4px 0px 0px #9BC005;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#requestcall .index_bg{
+    background-position: 0px -137px;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+#requestcall .action.action_footer{
+    margin: 50px auto;   
+}
+
+.copyrights{
+    position: absolute;
+    background: #f2f2f2;
+    margin-top: 12px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.copyrights:before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-left: -100%;
+    background: #f2f2f2;
 }
