@@ -404,3 +404,7 @@ ul.menu li a{
     height: auto;
     padding-bottom: 25px;
 }
+
+.js-modalaction{
+    display: none;
+}
