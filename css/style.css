@@ -72,6 +72,7 @@ h4{
     height: 100%;
     margin-left: -100%;
     background: #FFFFFF;
+    box-shadow: -17px -2px 11px rgba(0, 0, 0, 0.5);
 }
 
 .header{
@@ -80,6 +81,7 @@ h4{
     height: 120px;
     background: rgba(255, 255, 255, 1);
     z-index: 9;
+    box-shadow: -3px -12px 12px 10px rgba(0, 0, 0, 0.5);
 }
 .header:after{
      content:''; 
@@ -90,6 +92,7 @@ h4{
      background: #FFFFFF; 
      top: 0;  
      left: 100%;
+     box-shadow: 14px -1px 11px rgba(0, 0, 0, 0.5);
 }
 
 .body{
@@ -313,6 +316,10 @@ ul.menu li a{
     background: #f2f2f2;
 }
 
+#howwework {
+    padding-top: 25px;
+}
+
 #howwework .content{
     margin: 30px 0px;   
 }
@@ -337,7 +344,63 @@ ul.menu li a{
 
 #projects{
     padding-bottom: 25px;
+    padding-top: 25px;
 }
 #projects .button{
     margin-top: 10px;
+}
+
+.bjqs-prev a, .bjqs-next a{
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.63);
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Tahoma';
+}
+
+.bjqs-prev:hover a, .bjqs-next:hover a{
+    color: rgba(255, 255, 255, 1);
+}
+
+.bjqs-prev a{
+
+}
+
+.bjqs-next a{
+
+}
+
+.modal__container{
+    position: relative;
+    
+    display: inline-block;
+    box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.6);
+}
+
+.js-modal-close {
+    cursor: pointer;
+    background: url('../img/close_btn.png');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 100%;
+}
+
+.action_modal{
+    left: 50%;
+    
+    margin-left: -111px;
+    position: absolute;
+    top: 50%;
+    margin-top: -169px;
+    height: auto;
+    padding-bottom: 25px;
 }
