@@ -2,8 +2,8 @@ $(function() {
      $('.slider-aboutus').bjqs({
         'width' : 350,
         'height' : 260,
-        animspeed : 5000,
-        automatic : false,
+        animspeed : 3000,
+        automatic : true,
         showmarkers : false,
         nexttext : '&#8594;',
         prevtext : '&#8592;'  
@@ -12,8 +12,8 @@ $(function() {
     $('.slider-technology1').bjqs({
         'width' : 230,
         'height' : 170,
-        animspeed : 5000,
-        automatic : false,
+        animspeed : 3000,
+        automatic : true,
         showmarkers : false,
         nexttext : '&#8594;',
         prevtext : '&#8592;'  
@@ -22,8 +22,8 @@ $(function() {
     $('.slider-technology2').bjqs({
         'width' : 230,
         'height' : 170,
-        animspeed : 5000,
-        automatic : false,
+        animspeed : 3000,
+        automatic : true,
         showmarkers : false,
         nexttext : '&#8594;',
         prevtext : '&#8592;'  
@@ -32,8 +32,8 @@ $(function() {
     $('.slider-technology3').bjqs({
         'width' : 230,
         'height' : 170,
-        animspeed : 5000,
-        automatic : false,
+        animspeed : 3000,
+        automatic : true,
         showmarkers : false,
         nexttext : '&#8594;',
         prevtext : '&#8592;'  
@@ -42,8 +42,8 @@ $(function() {
     $('.slider-projects').bjqs({
         'width' : 637,
         'height' : 448,
-        animspeed : 5000,
-        automatic : false,
+        animspeed : 3000,
+        automatic : true,
         showmarkers : false,
         nexttext : '&#8594;',
         prevtext : '&#8592;'  
@@ -52,8 +52,8 @@ $(function() {
     $('.slider-cost').bjqs({
         'width' : 550,
         'height' : 440,
-        animspeed : 5000,
-        automatic : false,
+        animspeed : 3000,
+        automatic : true,
         showmarkers : false,
         nexttext : '&#8594;',
         prevtext : '&#8592;'  
@@ -62,8 +62,8 @@ $(function() {
     $('.slider-forging').bjqs({
         'width' : 640,
         'height' : 450,
-        animspeed : 5000,
-        automatic : false,
+        animspeed : 3000,
+        automatic : true,
         showmarkers : false,
         nexttext : '&#8594;',
         prevtext : '&#8592;'  
