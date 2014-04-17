@@ -24,7 +24,7 @@ h4{
     
 }
 
-#forging:before, #cost:before, #technology:before{
+#aboutus:before, #forging:before, #cost:before, #technology:before{
     content:'';
     display: block;
     position: absolute;
@@ -35,14 +35,14 @@ h4{
     margin-top: -20px;
 }
 
-#forging, #cost, #technology{
+#aboutus, #forging, #cost, #technology{
     background: #f2f2f2;
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-#forging:after, #cost:after, #technology:after{
+#aboutus:after, #forging:after, #cost:after, #technology:after{
     content:'';
     display: block;
     position: absolute;
@@ -99,25 +99,26 @@ h4{
     padding-top: 120px;
 }
 
-ul.menu{
-    list-style-type:none;
+.menu{
     position: absolute;
-    left: 323px;
+    left: 333px;
     top: 38px;
     font-size: 14px;
     vertical-align: middle;
 }
 
-ul.menu li{
-    display: inline-block;
+.menu td{
+    /*display: inline-block;
     color: #276a3d;
     width: 94px;
     float: left;
     vertical-align: middle;
-    height: 40px;
+    height: 40px;*/
+    width: 84px;
+    text-align: center;
 }
 
-ul.menu li a{
+.menu a{
     color: #276a3d;
 }
 
@@ -195,6 +196,7 @@ ul.menu li a{
     color: #FFFFFF;
     margin: 20px 0px 8px 0px;
     -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+    width: 550px;
 }
 
 .index__footer{
@@ -407,4 +409,9 @@ ul.menu li a{
 
 .js-modalaction{
     display: none;
+}
+
+#cost img.content__costimg{
+    margin-top: 70px;
+    
 }

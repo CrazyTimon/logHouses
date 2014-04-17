@@ -69,9 +69,9 @@ $(function() {
         prevtext : '&#8592;'  
     });
 
-    $('.bjqs-slide').on('click', function(e){
+    $('.bjqs-slide, .js-maximizeimg').on('click', function(e){
         var $el = $(e.currentTarget),
-            newSrc = $el.find('img').attr('src');
+            newSrc = $el.find('img').attr('src') || $el.attr('src');
         $('.js-modalimg img').attr('src', newSrc)
         $('.js-modalimg').modal();
     });
@@ -117,5 +117,10 @@ $(function() {
         $('.js-modalaction .js-modalaction-button').html(data.button);
         $('.js-modalaction').modal(); 
     });
+
+    $('.js-modalaction-button').on('click', function(e){
+        e.preventDefault();
+        /*тут можешь отправлять аяксом что хочешь*/
+        $(e.currentTarget).parents('.modal').modal('hide')
+    });
 });
-// $("html, body").animate({ scrollTop: $('#title1').offset().top }, 1000);
