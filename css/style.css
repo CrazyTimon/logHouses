@@ -100,6 +100,8 @@ h4{
 }
 
 .menu{
+    width: 650px;
+    margin-left: 30px;
     position: absolute;
     left: 333px;
     top: 38px;
@@ -114,12 +116,23 @@ h4{
     float: left;
     vertical-align: middle;
     height: 40px;*/
-    width: 84px;
+    width: 220px;
     text-align: center;
 }
 
 .menu a{
     color: #276a3d;
+    transition: color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+}
+
+.menu a.active{
+    transition: color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    color: #AECA0D;
+    text-decoration: none;
 }
 
 .img__meta{

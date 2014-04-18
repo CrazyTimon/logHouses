@@ -97,12 +97,15 @@ $(function() {
         var $el = $(e.currentTarget),
             id = $el.attr('href');
         
+        $('.js-menu a').removeClass('active');
+
         if(id === '#index'){
             $("html, body").animate({ scrollTop: 0 }, 1000);
         } else {
             $("html, body").animate({ scrollTop: $(id).offset().top-100 }, 1000);
         }
-            
+        
+        $el.addClass('active');
         e.preventDefault;
         return false;
     });
