@@ -352,6 +352,10 @@ h4{
     margin-top: 10px;
 }
 
+.bjqs, .js-maximizeimg{
+    cursor: pointer;
+}
+
 .bjqs-prev a, .bjqs-next a{
     text-decoration: none;
 
