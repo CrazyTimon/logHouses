@@ -5,8 +5,8 @@ $(function() {
         animspeed : 3000,
         automatic : true,
         showmarkers : false,
-        nexttext : '&#8594;',
-        prevtext : '&#8592;'  
+        nexttext : '›',
+        prevtext : '‹'  
     });
 
     $('.slider-technology1').bjqs({
@@ -15,8 +15,8 @@ $(function() {
         animspeed : 3000,
         automatic : true,
         showmarkers : false,
-        nexttext : '&#8594;',
-        prevtext : '&#8592;'  
+        nexttext : '›',
+        prevtext : '‹'  
     });
 
     $('.slider-technology2').bjqs({
@@ -25,8 +25,8 @@ $(function() {
         animspeed : 3000,
         automatic : true,
         showmarkers : false,
-        nexttext : '&#8594;',
-        prevtext : '&#8592;'  
+        nexttext : '›',
+        prevtext : '‹'  
     });
 
     $('.slider-technology3').bjqs({
@@ -35,8 +35,8 @@ $(function() {
         animspeed : 3000,
         automatic : true,
         showmarkers : false,
-        nexttext : '&#8594;',
-        prevtext : '&#8592;'  
+        nexttext : '›',
+        prevtext : '‹'  
     });
 
     $('.slider-projects').bjqs({
@@ -45,8 +45,8 @@ $(function() {
         animspeed : 3000,
         automatic : true,
         showmarkers : false,
-        nexttext : '&#8594;',
-        prevtext : '&#8592;'  
+        nexttext : '›',
+        prevtext : '‹'  
     });
 
     $('.slider-cost').bjqs({
@@ -55,8 +55,8 @@ $(function() {
         animspeed : 3000,
         automatic : true,
         showmarkers : false,
-        nexttext : '&#8594;',
-        prevtext : '&#8592;'  
+        nexttext : '›',
+        prevtext : '‹'  
     });
 
     $('.slider-forging').bjqs({
@@ -65,8 +65,8 @@ $(function() {
         animspeed : 3000,
         automatic : true,
         showmarkers : false,
-        nexttext : '&#8594;',
-        prevtext : '&#8592;'  
+        nexttext : '›',
+        prevtext : '‹'  
     });
 
     $('.bjqs-slide, .js-maximizeimg').on('click', function(e){
