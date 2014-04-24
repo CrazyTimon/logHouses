@@ -236,7 +236,7 @@ h4{
 
 .content__text{
     font-size: 14px;
-    padding-right: 50px;
+    /*padding-right: 50px;*/
 }
 
 .content__costtext{
@@ -264,7 +264,7 @@ h4{
     z-index: -1;
     left: 0px;
 }
-.index_bg:after{
+#index .index_bg:after{
     position: absolute;
     content: '';
     height: 162px;
@@ -446,4 +446,9 @@ h4{
 #cost img.content__costimg{
     margin-top: 70px;
     
+}
+
+.modalimg{
+    max-width: 1024px;
+    max-height: 768px;
 }

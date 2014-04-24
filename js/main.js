@@ -39,14 +39,16 @@ $(function() {
         prevtext : '‹'  
     });
 
-    $('.slider-projects').bjqs({
-        'width' : 637,
-        'height' : 448,
-        animspeed : 3000,
-        automatic : true,
-        showmarkers : false,
-        nexttext : '›',
-        prevtext : '‹'  
+    $.each($('.slider-projects'), function(){
+        $(this).bjqs({
+            'width' : 637,
+            'height' : 448,
+            animspeed : 3000,
+            automatic : true,
+            showmarkers : false,
+            nexttext : '›',
+            prevtext : '‹'  
+        });
     });
 
     $('.slider-cost').bjqs({
@@ -93,22 +95,22 @@ $(function() {
             })
         });
 
-    $('.js-menu a').on('click', function(e){
-        var $el = $(e.currentTarget),
-            id = $el.attr('href');
+    // $('.js-menu a').on('click', function(e){
+    //     var $el = $(e.currentTarget);
+    //     //     id = $el.attr('href');
         
-        $('.js-menu a').removeClass('active');
+    //     $('.js-menu a').removeClass('active');
 
-        if(id === '#index'){
-            $("html, body").animate({ scrollTop: 0 }, 1000);
-        } else {
-            $("html, body").animate({ scrollTop: $(id).offset().top-100 }, 1000);
-        }
+    //     // if(id === '#index'){
+    //     //     $("html, body").animate({ scrollTop: 0 }, 1000);
+    //     // } else {
+    //     //     $("html, body").animate({ scrollTop: $(id).offset().top-100 }, 1000);
+    //     // }
         
-        $el.addClass('active');
-        e.preventDefault;
-        return false;
-    });
+    //     $el.addClass('active');
+    //     // e.preventDefault;
+    //     // return false;
+    // });
 
     $('.js-modal').on('click', function(e){
         var $el = $(e.currentTarget);
@@ -124,6 +126,6 @@ $(function() {
     $('.js-modalaction-button').on('click', function(e){
         e.preventDefault();
         /*тут можешь отправлять аяксом что хочешь*/
-        $(e.currentTarget).parents('.modal').modal('hide')
+        /*$(e.currentTarget).parents('.modal').modal('hide')*/
     });
 });
